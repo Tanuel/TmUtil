@@ -1,0 +1,17 @@
+{
+  "name": "tmutil",
+  "version": "0.0.0-dev",
+  "description": "Utilities for my Tm-Projects",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "author": "Tanuel <tanuel.mategi@gmail.com>",
+  "license": "MIT",
+  "repository": "gitlab:Tanuel/tmutil",
+  "devDependencies": {
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "lint": "tslint --project ./"
+  }
+}
