@@ -7,6 +7,10 @@
   "author": "Tanuel <tanuel.mategi@gmail.com>",
   "license": "MIT",
   "repository": "gitlab:Tanuel/tmutil",
+  "homepage": "https://tanuel.gitlab.io/tmutil",
+  "bugs": {
+    "url": "https://gitlab.com/Tanuel/tmutil/issues"
+  },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/gitlab": "^3.1.2",
@@ -14,11 +18,13 @@
     "@semantic-release/release-notes-generator": "^7.1.4",
     "semantic-release": "^15.13.3",
     "tslint": "^5.14.0",
+    "typedoc": "^0.14.2",
     "typescript": "^3.3.3333"
   },
   "scripts": {
     "lint": "tslint --project ./",
     "build": "tsc",
+    "build:typedoc": "typedoc ./src",
     "release": "semantic-release"
   },
   "release": {

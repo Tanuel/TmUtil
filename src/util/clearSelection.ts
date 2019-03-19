@@ -1,7 +1,7 @@
 /**
  * Clears the current selection (user highlighted text)
  */
-function clearSelection() {
+export function clearSelection() {
     if (window.getSelection) {
         if (window.getSelection().empty) {  // Chrome
             window.getSelection().empty();
@@ -10,5 +10,3 @@ function clearSelection() {
         }
     }
 }
-
-export {clearSelection};

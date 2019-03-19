@@ -10,7 +10,15 @@
       "es2017"
     ]
   },
-  "files": [
-    "src/index.ts"
-  ]
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "typedocOptions": {
+    "mode": "file",
+    "out": "public",
+    "readme": "Readme.md",
+    "excludeNotExported": true,
+    "excludePrivate": true,
+    "excludeExternals": true
+  }
 }
