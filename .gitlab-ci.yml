@@ -1,0 +1,31 @@
+image: node:latest
+
+stages:
+  - test
+  - release
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+test:lint:
+  stage: test
+  script:
+    - npm prune
+    - npm install -g yarn
+    - yarn install
+    - yarn lint
+
+publish:
+  stage: release
+  cache:
+    policy: pull
+  script:
+    - npm prune
+    - npm install -g yarn
+    - yarn install
+    - yarn build
+    - yarn release
+  only:
+    - master

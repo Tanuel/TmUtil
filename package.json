@@ -8,10 +8,50 @@
   "license": "MIT",
   "repository": "gitlab:Tanuel/tmutil",
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/gitlab": "^3.1.2",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "semantic-release": "^15.13.3",
     "tslint": "^5.14.0",
     "typescript": "^3.3.3333"
   },
   "scripts": {
-    "lint": "tslint --project ./"
+    "lint": "tslint --project ./",
+    "build": "tsc",
+    "release": "semantic-release"
+  },
+  "release": {
+    "branch": "master",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/gitlab",
+      "@semantic-release/npm"
+    ],
+    "analyzeCommits": {
+      "releaseRules": [
+        {
+          "type": "MAJOR",
+          "release": "major"
+        },
+        {
+          "type": "FEATURE",
+          "release": "minor"
+        },
+        {
+          "type": "BUGFIX",
+          "release": "patch"
+        },
+        {
+          "type": "SECURITY",
+          "release": "patch"
+        },
+        {
+          "type": "PATCH",
+          "release": "patch"
+        }
+      ]
+    }
   }
 }
