@@ -24,6 +24,7 @@
   "scripts": {
     "lint": "tslint --project ./",
     "build": "tsc",
+    "watch": "tsc --watch",
     "build:typedoc": "typedoc ./src",
     "release": "semantic-release"
   },
