@@ -32,4 +32,11 @@ const myDiv = create<"div">("div", {
         height: "100px"
     }
 });
+
+// loop over an object
+import {each} from "tmutil"
+const obj = {k1: "v1", k2: "v2"};
+each(obj, (key, value) => {
+    // do something with key and value
+});
 ```
