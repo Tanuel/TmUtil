@@ -1,3 +1,5 @@
+import {each} from "./each";
+
 /**
  * Creates a new HTMLElement
  *
@@ -10,9 +12,9 @@
 export function create<K extends keyof HTMLElementTagNameMap>(name: K, properties?: object): HTMLElementTagNameMap[K];
 export function create(name: string, properties: object = {}): HTMLElement {
     const el = document.createElement(name);
-    Object.entries(properties).forEach(([key, value]: [string, any]) => {
+    each(properties, (key, value) => {
         if (typeof value === "object") {
-            Object.entries(value).forEach(([nestedKey, nestedValue]) => {
+            each(value, (nestedKey, nestedValue) => {
                 el[key][nestedKey] = nestedValue;
             });
         } else {
