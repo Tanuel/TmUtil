@@ -23,6 +23,7 @@
   },
   "scripts": {
     "lint": "tslint --project ./",
+    "lint:fix": "tslint --project ./ --fix",
     "build": "tsc",
     "watch": "tsc --watch",
     "build:typedoc": "typedoc ./src",
