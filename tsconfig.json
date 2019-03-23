@@ -10,6 +10,7 @@
     "./src/**/*.ts"
   ],
   "typedocOptions": {
+    "name": "TmUtil",
     "mode": "file",
     "out": "public",
     "readme": "Readme.md",
