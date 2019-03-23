@@ -1,3 +1,7 @@
+[![Powered by Tanuel](https://img.shields.io/badge/Powered%20by-Tanuel-b22.svg)](https://gitlab.com/Tanuel)
+[![npm](https://img.shields.io/npm/dt/tmutil.svg?logo=npm)](https://www.npmjs.com/package/tmutil)
+[![Build Pipeline](https://gitlab.com/Tanuel/tmutil/badges/master/pipeline.svg)](https://gitlab.com/Tanuel/tmutil/pipelines)
+
 # TmUtil
 
 Simple collection of function or wrappers i use for my own projects.
