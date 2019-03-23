@@ -31,7 +31,11 @@ publish:
     - yarn build
     - yarn release
   only:
-    - master
+    changes:
+      - src/**/*
+      - Readme.md
+    refs:
+      - master
 
 pages:
   stage: deploy
@@ -46,4 +50,8 @@ pages:
     paths:
       - public
   only:
-    - master
+    changes:
+      - src/**/*
+      - Readme.md
+    refs:
+      - master
