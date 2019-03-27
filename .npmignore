@@ -4,3 +4,8 @@
 /tslint.json
 /.gitlab-ci.yml
 /public
+
+# ignore .ts files
+/src/**/*.ts
+# include the .d.ts files
+!/src/**/*.d.ts
