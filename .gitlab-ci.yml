@@ -13,20 +13,25 @@ cache:
 test:lint:
   stage: test
   script:
-    - npm prune
-    - npm install -g yarn
     - yarn install
     - yarn lint
   except:
     - tags
+
+test:jest:
+  stage: test
+  script:
+    - yarn install
+    - yarn test
+  except:
+    - tags
+
 
 publish:
   stage: release
   cache:
     policy: pull
   script:
-    - npm prune
-    - npm install -g yarn
     - yarn install
     - yarn build
     - yarn release
@@ -42,8 +47,6 @@ pages:
   cache:
     policy: pull
   script:
-    - npm prune
-    - npm install -g yarn
     - yarn install
     - yarn build:typedoc
   artifacts:
