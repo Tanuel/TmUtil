@@ -1,6 +1,8 @@
 [![Powered by Tanuel](https://img.shields.io/badge/Powered%20by-Tanuel-b22.svg)](https://gitlab.com/Tanuel)
-[![npm](https://img.shields.io/npm/dt/tmutil.svg?logo=npm)](https://www.npmjs.com/package/tmutil)
+[![Documentation](https://img.shields.io/badge/-Documentation-blueviolet.svg)](https://tanuel.gitlab.io/tmutil)
 [![Build Pipeline](https://gitlab.com/Tanuel/tmutil/badges/master/pipeline.svg)](https://gitlab.com/Tanuel/tmutil/pipelines)
+[![npm version](https://img.shields.io/npm/v/tmutil.svg?logo=npm)](https://www.npmjs.com/package/tmutil)
+[![npm](https://img.shields.io/npm/dt/tmutil.svg?logo=npm)](https://www.npmjs.com/package/tmutil)
 
 # TmUtil
 

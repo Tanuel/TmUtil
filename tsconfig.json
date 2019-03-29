@@ -4,10 +4,18 @@
     "noImplicitAny": false,
     "preserveConstEnums": true,
     "target": "ES5",
-    "declaration": true
+    "declaration": true,
+    "types": [
+      "jest"
+    ]
   },
   "include": [
     "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./src/**/*.d.ts",
+    "./src/**/*.test.ts",
+    "./src/**/*.spec.ts"
   ],
   "typedocOptions": {
     "name": "TmUtil",

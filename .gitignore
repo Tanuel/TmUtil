@@ -5,3 +5,4 @@
 /src/**/*.d.ts
 /yarn-error.log
 /public
+/coverage

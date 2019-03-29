@@ -4,8 +4,10 @@
 /tslint.json
 /.gitlab-ci.yml
 /public
+/coverage
+/jest.config.js
 
-# ignore .ts files
+# ignore .ts files (source files and tests)
 /src/**/*.ts
-# include the .d.ts files
+# include .d.ts files
 !/src/**/*.d.ts
