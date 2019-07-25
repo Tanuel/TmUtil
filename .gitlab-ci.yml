@@ -36,9 +36,6 @@ publish:
     - yarn build
     - yarn release
   only:
-    changes:
-      - src/**/*
-      - Readme.md
     refs:
       - master
 
@@ -53,8 +50,5 @@ pages:
     paths:
       - public
   only:
-    changes:
-      - src/**/*
-      - Readme.md
     refs:
       - master
