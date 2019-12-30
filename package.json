@@ -12,17 +12,17 @@
     "url": "https://gitlab.com/Tanuel/tmutil/issues"
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^6.1.0",
-    "@semantic-release/gitlab": "^3.1.2",
-    "@semantic-release/npm": "^5.1.4",
-    "@semantic-release/release-notes-generator": "^7.1.4",
-    "@types/jest": "^24.0.11",
-    "jest": "^24.5.0",
-    "semantic-release": "^15.13.3",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.14.0",
-    "typedoc": "^0.14.2",
-    "typescript": "^3.3.3333"
+    "@semantic-release/commit-analyzer": "^6.3.3",
+    "@semantic-release/gitlab": "^4.1.0",
+    "@semantic-release/npm": "^5.3.5",
+    "@semantic-release/release-notes-generator": "^7.3.5",
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "semantic-release": "^15.14.0",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "typedoc": "^0.15.6",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "lint": "tslint --project ./",
